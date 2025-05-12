@@ -170,7 +170,6 @@ class TRectangle extends TShape {
   get path2D(){
     return new Path2D(`M ${this.x} ${this.y} h ${this.width} v ${this.height} h ${-this.width} Z`);
   }
-
   isOvalInside(aOval) {
     //Check if a oval with radius a and b is inside this rectangle
     const dx = this.center.x - aOval.center.x;
